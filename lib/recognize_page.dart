@@ -1,5 +1,6 @@
 import 'dart:io';
 import 'dart:math';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart';
 
@@ -28,7 +29,9 @@ class _RecognizerPageState extends State<RecognizerPage> {
         await textRecognizer.processImage(inputImage);
 
     result = recognizedText.text;
-    print(result);
+    if (kDebugMode) {
+      print(result);
+    }
     setState(() {
       result;
     });
@@ -51,7 +54,7 @@ class _RecognizerPageState extends State<RecognizerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 221, 144, 170),
+        backgroundColor: Colors.blue,
         title: const Text('Recognizer'),
         centerTitle: true,
       ),
