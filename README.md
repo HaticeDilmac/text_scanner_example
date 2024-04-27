@@ -20,6 +20,9 @@ This Flutter project provides functionality for document scanning and recognizin
    ```bash
    git clone https://github.com/username/projectname.git
 
+
+```
+
 ## ScreenShot
 ![Screenshot_1714235014](https:![Screenshot_1714235681](https://github.com/HaticeDilmac/text_scanner_example/assets/100489350/2a81ce5b-ab88-4d4e-a192-d832f82e3555)
 //github![Screenshot_1714235714](https://github.com/HaticeDilmac/text_scanner_example/assets/100489350/11304e07-37d8-4423-9396-498e360fa31e)
@@ -29,5 +32,3 @@ This Flutter project provides functionality for document scanning and recognizin
 
 <img src="https://github.com/HaticeDilmac/text_scanner_example/assets/100489350/11304e07-37d8-4423-9396-498e360fa31e" width="200" height="400"> 
 <img src="https://github.com/HaticeDilmac/text_scanner_example/assets/100489350/2a81ce5b-ab88-4d4e-a192-d832f82e3555" width="200" height="400">  
-
-```
