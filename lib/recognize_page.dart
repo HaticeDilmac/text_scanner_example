@@ -38,6 +38,7 @@ class _RecognizerPageState extends State<RecognizerPage> {
     for (TextBlock block in recognizedText.blocks) {
       final Rect rect = block.boundingBox;
       final List<Point<int>> cornerPoints = block.cornerPoints;
+      // ignore: unused_local_variable
       final String text = block.text;
       final List<String> languages = block.recognizedLanguages;
 
@@ -54,7 +55,7 @@ class _RecognizerPageState extends State<RecognizerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 107, 178, 236),
         title: const Text('Recognizer'),
         centerTitle: true,
       ),
@@ -62,14 +63,17 @@ class _RecognizerPageState extends State<RecognizerPage> {
         child: Column(
           children: [
             Container(
-                color: Colors.grey,
+                color: const Color.fromARGB(255, 220, 219, 219),
                 height: 500,
                 width: double.infinity,
                 //gelen resim burada dosya olarak gösterilir
                 child: Image.file(
                   widget.image,
                 )),
-            Text(result)
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Text(result),
+            )
           ],
         ),
       ),

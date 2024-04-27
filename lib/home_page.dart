@@ -1,5 +1,7 @@
 import 'dart:io';
 
+import 'package:cunning_document_scanner/cunning_document_scanner.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:text_scanner_example/recognize_page.dart';
@@ -12,12 +14,29 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  List<String> _pictures = []; //documents scanner list  ""
   late ImagePicker imagePicker;
 
   @override
   void initState() {
     super.initState();
     imagePicker = ImagePicker();
+  }
+
+  void onPressed() async {
+    //document scanner function
+    try {
+      List<String> pictures =
+          await CunningDocumentScanner.getPictures() ?? []; //scanner is empty
+      if (!mounted) return;
+      setState(() {
+        _pictures = pictures; //get pictures empty list _pictures send
+      });
+    } catch (e) {
+      if (kDebugMode) {
+        print('Erorr $e');
+      }
+    }
   }
 
   @override
@@ -29,11 +48,12 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Container(
               height: 100,
-              color: Colors.blue,
+              color: const Color.fromARGB(255, 107, 178, 236),
             ),
             Expanded(
               child: Container(),
             ),
+            for (var picture in _pictures) Image.file(File(picture)),
             Container(
               //Bottom camera and image button widget
               height: 100,
@@ -42,13 +62,13 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               width: double.infinity,
               decoration: const BoxDecoration(
-                color: Colors.blue,
+                color: Color.fromARGB(255, 107, 178, 236),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   IconButton(
-                      onPressed: () {},
+                      onPressed: onPressed,
                       icon: const Icon(
                         Icons.document_scanner,
                         size: 30,
