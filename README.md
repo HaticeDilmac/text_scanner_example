@@ -1,4 +1,4 @@
-# text_scanner_example
+# Text And Document Scanner
 
 
 ### English README
