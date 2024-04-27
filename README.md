@@ -1,16 +1,22 @@
 # text_scanner_example
 
-A new Flutter project.
 
-## Getting Started
+### İngilizce README
 
-This project is a starting point for a Flutter application.
+```
+# Document Scanner and Text Recognition App
 
-A few resources to get you started if this is your first Flutter project:
+This Flutter project provides functionality for document scanning and recognizing text from images. Users can scan documents and display them, and recognize text from images.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Features
+- Document scanning functionality
+- Capture images with the camera
+- Select images from the gallery
+- Recognize text from images
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Installation
+1. Install Flutter and Dart SDKs.
+2. Clone this project from GitHub:
+   ```bash
+   git clone https://github.com/username/projectname.git
+```
