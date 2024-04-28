@@ -3,7 +3,7 @@ import 'package:text_scanner_example/home_page.dart';
 
 void main() {
   runApp(const MyApp());
-}
+        }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

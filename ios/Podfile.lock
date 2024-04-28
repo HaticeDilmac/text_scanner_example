@@ -1,5 +1,11 @@
 PODS:
+  - camera_avfoundation (0.0.1):
+    - Flutter
+  - cunning_document_scanner (1.0.0):
+    - Flutter
   - Flutter (1.0.0)
+  - flutter_document_scanner_ios (0.5.0):
+    - Flutter
   - google_mlkit_commons (0.7.1):
     - Flutter
     - MLKitVision
@@ -70,13 +76,19 @@ PODS:
     - nanopb/encode (= 2.30910.0)
   - nanopb/decode (2.30910.0)
   - nanopb/encode (2.30910.0)
+  - permission_handler_apple (9.3.0):
+    - Flutter
   - PromisesObjC (2.4.0)
 
 DEPENDENCIES:
+  - camera_avfoundation (from `.symlinks/plugins/camera_avfoundation/ios`)
+  - cunning_document_scanner (from `.symlinks/plugins/cunning_document_scanner/ios`)
   - Flutter (from `Flutter`)
+  - flutter_document_scanner_ios (from `.symlinks/plugins/flutter_document_scanner_ios/ios`)
   - google_mlkit_commons (from `.symlinks/plugins/google_mlkit_commons/ios`)
   - google_mlkit_text_recognition (from `.symlinks/plugins/google_mlkit_text_recognition/ios`)
   - image_picker_ios (from `.symlinks/plugins/image_picker_ios/ios`)
+  - permission_handler_apple (from `.symlinks/plugins/permission_handler_apple/ios`)
 
 SPEC REPOS:
   trunk:
@@ -95,17 +107,28 @@ SPEC REPOS:
     - PromisesObjC
 
 EXTERNAL SOURCES:
+  camera_avfoundation:
+    :path: ".symlinks/plugins/camera_avfoundation/ios"
+  cunning_document_scanner:
+    :path: ".symlinks/plugins/cunning_document_scanner/ios"
   Flutter:
     :path: Flutter
+  flutter_document_scanner_ios:
+    :path: ".symlinks/plugins/flutter_document_scanner_ios/ios"
   google_mlkit_commons:
     :path: ".symlinks/plugins/google_mlkit_commons/ios"
   google_mlkit_text_recognition:
     :path: ".symlinks/plugins/google_mlkit_text_recognition/ios"
   image_picker_ios:
     :path: ".symlinks/plugins/image_picker_ios/ios"
+  permission_handler_apple:
+    :path: ".symlinks/plugins/permission_handler_apple/ios"
 
 SPEC CHECKSUMS:
+  camera_avfoundation: 759172d1a77ae7be0de08fc104cfb79738b8a59e
+  cunning_document_scanner: 7cb9bd173f7cc7b11696dde98d01492187fc3a67
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_document_scanner_ios: 0e4b14807705769654fd82437feb6cb148bf1a45
   google_mlkit_commons: 96aaca445520311b84a2da013dedf3427fe4cc69
   google_mlkit_text_recognition: 6afe60af9fc3099f8f172fa42fbb14d4fe87f738
   GoogleDataTransport: 6c09b596d841063d76d4288cc2d2f42cc36e1e2a
@@ -121,8 +144,9 @@ SPEC CHECKSUMS:
   MLKitTextRecognitionCommon: 3bd8375160d21dc9f9cc512d1fab2530ecc43dde
   MLKitVision: 90922bca854014a856f8b649d1f1f04f63fd9c79
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
+  permission_handler_apple: 9878588469a2b0d0fc1e048d9f43605f92e6cec2
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
-PODFILE CHECKSUM: 7be2f5f74864d463a8ad433546ed1de7e0f29aef
+PODFILE CHECKSUM: a57f30d18f102dd3ce366b1d62a55ecbef2158e5
 
 COCOAPODS: 1.15.2
