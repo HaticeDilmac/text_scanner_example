@@ -24,7 +24,7 @@ class _RecognizerPageState extends State<RecognizerPage> {
 
   String result = "";
   makeTextRecognition() async {
-    InputImage inputImage = InputImage.fromFile(widget!.image);
+    InputImage inputImage = InputImage.fromFile(widget.image);
     final RecognizedText recognizedText =
         await textRecognizer.processImage(inputImage);
 
@@ -36,15 +36,19 @@ class _RecognizerPageState extends State<RecognizerPage> {
       result;
     });
     for (TextBlock block in recognizedText.blocks) {
+      // ignore: unused_local_variable
       final Rect rect = block.boundingBox;
+      // ignore: unused_local_variable
       final List<Point<int>> cornerPoints = block.cornerPoints;
       // ignore: unused_local_variable
       final String text = block.text;
+      // ignore: unused_local_variable
       final List<String> languages = block.recognizedLanguages;
 
       for (TextLine line in block.lines) {
         // Same getters as TextBlock
-        for (TextElement element in line.elements) {
+        // ignore: unused_local_variable
+        for (TextElement elemFent in line.elements) {
           // Same getters as TextBlock
         }
       }
